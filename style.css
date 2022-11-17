@@ -1,0 +1,976 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Judson', serif;
+    
+    
+}
+
+
+
+/*-------------------------HEADER-------------*/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px ;
+    width: 100%;
+}
+
+.header__logo {
+    width: 150px;
+    height: auto;
+}
+
+
+
+.header__navbar {
+    width: 100%;
+    background-color: transparent;
+    
+}
+
+
+
+.navbar__list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+
+.list__pag {
+    font-size: 24px;
+    border: 3px solid #C9AC1E;
+    border-radius: 60px;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    background-color: rgba(48, 43, 34, 0.473);
+    margin-right: 10%;
+    
+    
+  
+}
+
+.list__pag:hover {
+    font-size: 24px;
+    border: 3px solid #C9AC1E;
+    border-radius: 60px;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    background-color: rgba(238, 160, 15, 0.473);
+    margin-right: 10%;
+  
+}
+
+/*---------------------MOBILE HEADER-------------*/
+
+@media screen and (max-width:768px) {
+    .navbar-toggler {
+        border: 2px solid #C9AC1E;
+        background-color: rgba(238, 160, 15, 0.473);
+        
+    }
+
+    .header__logo {
+        width: 130px;
+        height: auto;
+    }
+
+    .navbar__list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-link {
+        font-size: 19px;
+        padding: 0;
+        display: inline;
+    }
+
+    li {
+        margin-top: 15px;
+    }
+}
+
+
+/*------------------------------------ Pag INICIO-------------*/
+.index {
+    background-image: url(./img/inicio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+h1 {
+    color: white;
+    font-family: 'Judson', serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: lighter;
+    
+    
+}
+
+
+.main__index {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 60px;
+    
+}
+
+
+.img__inside {
+    margin: 30px;
+    border-radius: 30px;
+    width: 70%;
+    height: auto;
+    box-shadow: 3px 3px 20px;
+    
+    
+    
+}
+.index__text {
+    background-color: rgba(118, 175, 157, 0.6);
+    width: 50%;
+    height: auto;
+    margin-right: 60px;
+    border-radius: 30px;
+    
+    
+}
+
+.text__description {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    
+
+}
+
+.text__tittlemain {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.index__img {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.carousel-inner {
+    width: 60%;
+    border-radius: 30px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 45%;
+}
+
+
+/*-------------------MOBILE INICIO-------------*/
+
+@media screen and (max-width:768px) {
+    .index {
+         background-size: cover;  
+    }
+    
+    h1 {
+        font-size: 31px;
+         
+    }
+    
+    .main__index {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .img__inside {
+        border-radius: 30px;
+        width: 80%;
+        height: auto;
+        
+    }
+    .index__text {
+        width: 100%;
+        
+    }
+    
+    .text__description {
+        font-size: 16px;
+        margin-top: -20px;
+    
+    }
+    
+    .text__tittlemain {
+        font-size: 21px;
+        margin: 5px;
+    }
+    
+    .index__img {
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        margin-right: 60px
+        
+    }
+
+    .carousel-inner {
+        width: 100%;
+        
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        width: 10%;
+    }
+  
+}
+
+
+
+/*------------------------------------ PAGINA SERVICIOS--------------------------*/
+.services {
+    background-image: url(./img/fondoservicio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.service__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    
+}
+
+.service__img {
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.container__manicure {
+    width: 80vw;
+    height: 350px;
+    background-color: rgb(243, 218, 216, 0.5);
+    border-radius: 40px;
+    padding: 30px;
+    
+}
+
+.container__manicure:hover {
+    
+    transform: scale(1.1);
+    transition: all 1s ease;
+    
+
+}
+
+.manicure__service {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 80px;
+    
+  
+    
+    
+}
+
+.manicure__description {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+   
+    
+    
+}
+
+.list__type {
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+    text-align: start;
+    margin-right: 150px;
+    
+    
+}
+
+.description__list {
+    list-style-type: circle;
+}
+
+.container__facial {
+    margin-top: 60px;
+    width: 80vw;
+    height: 350px;
+    background-color: rgb(243, 218, 216, 0.5);
+    border-radius: 40px;
+    padding: 30px;
+}
+
+.container__facial:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+
+}
+
+
+.facial__service {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 80px;
+    align-items: center;
+    margin-top: 50px;
+    
+    
+}
+
+.facial__description {
+    margin-right: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+/*---------------------------MOBILE PAGINA SERVICIOS--------------------------*/
+
+@media screen and (max-width:768px) {
+    
+    
+    
+    .service__img {
+        width: 100%;
+
+    }
+    
+    .service__tittle {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    
+    .container__manicure {
+        width: 80%;
+        height: auto;
+        padding: 5px;
+    
+    }
+
+    .container__manicure:hover {
+        transform: none
+    }
+    
+    .manicure__service {
+        flex-direction: column;
+        margin: 10px;
+        
+    }
+
+    .manicure__description {
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .list__type {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .description__listm {
+        list-style-type: circle;
+        
+       
+    }
+
+    .description__listf {
+        list-style-type: circle;
+        margin-left: 90px;
+        
+       
+    }
+    
+    .container__facial {
+        width: 80%;
+        height: auto;
+        padding: 5px;
+        
+    }
+
+    .container__facial:hover {
+        transform: none;
+    
+    }
+    
+    .facial__service {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .facial__description {
+        margin-right: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+  
+}
+
+/*------------------------------------ PAG SHOP ------------------------*/
+.shop {
+    background-image: url(./img/fondoshop.jpg);
+    background-repeat: no-repeat;
+    background-position: 70%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.card {
+    width: 200px;
+    height: 350px;
+    background: linear-gradient(0deg, rgba(195,162,158,1) 29%, rgba(219,209,209,1) 100%);
+    border-radius: 40px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    box-shadow: 3px 3px 30px black;
+    
+}
+
+
+
+.card:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
+}
+
+.button-buy {
+    width: 70px;
+    height: 30px;
+    background: transparent;
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    font-family: 'Judson', serif;
+    font-size: 15px;
+    
+    
+}
+
+.card__tittle, .card__price {
+    color: white;
+    font-size: 16px;
+    font-family: 'Judson', serif;
+}
+
+/*-----------------------------MOBILE PAG SHOP ------------------------*/
+
+@media screen and (max-width:768px) {
+    .shop {
+        background-image: url(./img/fondoshop.jpg);
+        background-repeat: no-repeat;
+        background-position: 70%;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .containerProducts {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       
+    }
+    
+    .card {
+        
+        margin: 20px 80px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .card:hover {
+        transform: none;
+    }
+
+}
+
+
+/*------------------------------------ Pag GALERIA---------------------------*/
+
+.galery {
+    background-image: url(./img/galeria.jpg);
+    background-repeat: no-repeat;
+    background-position: 70%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+h2 {
+    color: white;
+    font-family: 'Judson', serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 60px;
+    font-weight: lighter;
+}
+    
+    
+    
+.hands__manicure  {
+    font-size: 30px;
+    
+}
+
+.hands__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.face__facial {
+    font-size: 30px;
+    
+}
+
+.fase__facial, .hands__manicure {
+    color: white;
+    font-family:'Judson', serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: lighter;
+    
+}
+
+.container-galery {
+    display: flex;
+    flex-direction: column;
+}
+
+.row__hands {
+    margin: 5px 40px;
+}
+
+
+
+.hands1 {
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px;
+    
+}
+
+.hands1:hover{
+    transform: scale(1.5);
+    transition: all 1s ease;
+    
+
+}
+
+.hands2 {
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px;
+}
+
+
+.hands2:hover{
+    transform: scale(1.5);
+    transition: all 1s ease;
+}
+
+.hands3 {
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px;
+}
+
+.hands3:hover{
+    transform: scale(1.5);
+    transition: all 1s ease;
+}
+
+.face {
+    margin-top: 40px;
+}
+
+.face__container {
+    display: flex;
+    justify-content: center;
+}
+
+.row__face {
+    margin: 5px 50px;
+}
+
+
+.face1 {
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px;
+}
+
+.face1:hover{
+    transform: scale(1.5);
+    transition: all 1s ease;
+}
+
+.face2 {
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px;
+}
+
+.face2:hover{
+    transform: scale(1.5);
+    transition: all 1s ease;
+}
+
+.face3 {
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px;
+}
+
+.face3:hover{
+    transform: scale(1.5);
+    transition: all 1s ease;
+}
+
+/*------------------------------------MOBILE Pag GALERIA---------------------------*/
+
+@media screen and (max-width:768px) {
+    h2 {
+        
+        font-size: 30px;
+        margin-top: 10px;
+    }
+     
+    .face__facial {
+        
+        font-size: 23px;
+        margin-top: 10px;
+        
+    }
+
+    .hands__manicure {
+        
+        font-size: 23px;
+        margin-top: 10px;
+        
+    }
+
+    .hands__img {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        
+        
+    }
+    .hands1 {
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px;
+        margin: 10px;
+    }
+    .hands2 {
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px;
+        margin: 10px;
+    }
+    .hands3 {
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px;
+        margin: 10px
+    }
+
+    .hands1:hover{
+        transform: none;
+    }
+    .hands2:hover{
+        transform: none;
+    }
+    .hands3:hover{
+        transform: none;
+    }
+
+    .row__div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .face__img {
+        display: flex;
+        flex-direction: column;
+        margin:10px 35px;
+        width: 80%;
+        
+    }
+    .face1 {
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px;
+        margin: 10px;
+    }
+    
+    .face1:hover{
+        transform: none;
+        
+    }
+    .face2 {
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px;
+        margin: 10px;
+    }
+    
+    .face2:hover{
+        transform: none;
+        
+    }
+    
+    .face3 {
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px;
+        margin: 10px;
+    }
+    
+    .face3:hover{
+        transform: none;
+        
+    }
+    
+
+
+}
+
+/*------------------------------------ Pag Contacto-------------*/
+.body-contact {
+    background-image: url(./img/contacto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+    
+}
+
+.form {
+    background-color: rgba(118, 175, 157, 0.6);
+    width: auto;
+    height: auto;
+    margin: 50px 70px;
+    color: white;
+    font-size: 25px;
+    border-radius: 60px;
+}
+
+textarea {
+    border-radius: 10px;
+    border-style: none;
+    width: 100%;
+    height: 120px;
+    resize:none;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.form__form {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__description {
+    margin: 10px;
+}
+
+input {
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 20px;
+}
+
+.form__button {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #6e9c8a;
+    border-style: none;
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+    font-family: 'Judson', serif;
+    box-shadow: 2px 2px 10px;
+}
+
+.form__button:hover {
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+
+.section-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact__days {
+    font-size: 40px;
+    color: white;
+
+}
+
+.section-pay {
+    font-size: 40px;
+    color: white;
+}
+
+.days__time {
+    font-size: 30px;
+}
+
+/*-----------------------------MOBILE Pag Contacto-------------*/
+
+@media screen and (max-width:768px) {
+    .form {
+        margin: 10px;
+        font-size: 15px;
+        border-radius: 18px;
+    }
+    .form__form {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    input {
+        width: 100%;
+        height: 25px;
+        border-radius: 10px;
+        border-style: none;
+        font-size: 16px;
+    }
+
+    textarea {
+        border-radius: 10px;
+        border-style: none;
+        width: 100%;
+        height: 120px;
+        resize:none;
+        font-size: 16px;
+        padding: 5px;
+    
+    }
+
+    .section-contact {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .contact__days {
+        font-size: 30px;
+        
+    
+    }
+    
+    .section-pay {
+        font-size: 30px;
+        
+    }
+    
+    .days__time {
+        font-size: 25px;
+    }
+
+
+}
+
+/*-------------------FOOTER-------------*/
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 140px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: lighter;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-redes {
+    margin-left: 40px;
+}
+
+.direc__ubi {
+    margin: 0;
+}
+
+.direc__p {
+    margin: 0;
+}
+
+/*-------------------MOBILE FOOTER-------------*/
+
+@media screen and (max-width :768px) {
+    footer {
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .direc__p {
+        text-align: center;
+    }
+
+    .footer__nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+}
